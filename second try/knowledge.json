@@ -1,0 +1,197 @@
+{
+    "concepts": {
+        "c0": {
+            "name": "Rubik's Cube",
+            "description": "A 3-D combination puzzle with six faces, each made up of nine stickers in different colors",
+            "attributes": {
+                "dimensions": "3x3x3",
+                "colors": ["white", "yellow", "red", "orange", "blue", "green"],
+                "possible_combinations": "43,252,003,274,489,856,000",
+                "solution_methods": ["layer by layer", "CFOP", "Roux"]
+            },
+            "category": "rubiks_cube"
+        },
+        "c1": {
+            "name": "Artificial Intelligence",
+            "description": "AI is the simulation of human intelligence in machines programmed to think and learn like humans",
+            "attributes": {
+                "types": ["machine learning", "deep learning", "natural language processing", "computer vision"],
+                "applications": ["chatbots", "recommendation systems", "autonomous vehicles", "pattern recognition"],
+                "frameworks": ["TensorFlow", "PyTorch", "scikit-learn"]
+            },
+            "category": "ai"
+        },
+        "c2": {
+            "name": "Natural Language Processing",
+            "description": "NLP is a branch of AI that helps computers understand, interpret, and manipulate human language",
+            "attributes": {
+                "tasks": ["text classification", "sentiment analysis", "named entity recognition", "machine translation"],
+                "techniques": ["tokenization", "lemmatization", "parsing", "word embeddings"],
+                "models": ["BERT", "GPT", "RoBERTa"]
+            },
+            "category": "nlp"
+        },
+        "c3": {
+            "name": "Graph Theory",
+            "description": "Graph theory is the mathematical study of networks and their properties, crucial for analyzing relationships and paths",
+            "attributes": {
+                "components": ["nodes", "edges", "weights", "directions"],
+                "algorithms": ["shortest path", "minimum spanning tree", "page rank", "community detection"],
+                "applications": ["social networks", "transportation", "computer networks"]
+            },
+            "category": "graph_theory"
+        },
+        "c4": {
+            "name": "Euclidean Geometry",
+            "description": "Classical geometry based on Euclid's postulates and theorems",
+            "attributes": {
+                "elements": ["points", "lines", "planes", "angles"],
+                "theorems": ["Pythagorean", "angle sum", "congruence"],
+                "applications": ["spatial reasoning", "architecture", "3D modeling"]
+            },
+            "category": "mathematics"
+        },
+        "c5": {
+            "name": "Group Theory",
+            "description": "Study of algebraic structures known as groups and their properties",
+            "attributes": {
+                "properties": ["closure", "associativity", "identity", "inverse"],
+                "types": ["cyclic", "symmetric", "permutation"],
+                "applications": ["cryptography", "crystallography", "physics"]
+            },
+            "category": "mathematics"
+        },
+        "c6": {
+            "name": "Color Theory",
+            "description": "Study of color properties and their relationships",
+            "attributes": {
+                "properties": ["hue", "saturation", "value", "temperature"],
+                "schemes": ["complementary", "analogous", "triadic"],
+                "applications": ["design", "art", "visualization"]
+            },
+            "category": "design"
+        },
+        "c7": {
+            "name": "Pattern Recognition",
+            "description": "Identification of regularities and structures in data",
+            "attributes": {
+                "methods": ["template matching", "statistical", "syntactic"],
+                "features": ["edges", "textures", "shapes"],
+                "domains": ["image analysis", "signal processing", "behavior analysis"]
+            },
+            "category": "computer_science"
+        },
+        "c8": {
+            "name": "Symmetry Operations",
+            "description": "Transformations that preserve geometric properties",
+            "attributes": {
+                "operations": ["rotation", "reflection", "translation"],
+                "groups": ["point", "space", "plane"],
+                "applications": ["crystal structures", "molecular analysis", "art"]
+            },
+            "category": "mathematics"
+        },
+        "c9": {
+            "name": "State Machines",
+            "description": "Mathematical models of computation and behavior",
+            "attributes": {
+                "types": ["finite", "pushdown", "Turing"],
+                "components": ["states", "transitions", "inputs"],
+                "applications": ["protocol design", "game logic", "circuit design"]
+            },
+            "category": "computer_science"
+        }
+    },
+    "relationships": [
+        {
+            "source": "c0",
+            "target": "c1",
+            "type": "application_domain",
+            "strength": 0.7
+        },
+        {
+            "source": "c1",
+            "target": "c2",
+            "type": "includes",
+            "strength": 0.9
+        },
+        {
+            "source": "c2",
+            "target": "c3",
+            "type": "uses",
+            "strength": 0.8
+        },
+        {
+            "source": "c0",
+            "target": "c3",
+            "type": "solution_method",
+            "strength": 0.6
+        },
+        {
+            "source": "c0",
+            "target": "c4",
+            "type": "applies",
+            "strength": 0.85
+        },
+        {
+            "source": "c0",
+            "target": "c5",
+            "type": "utilizes",
+            "strength": 0.9
+        },
+        {
+            "source": "c0",
+            "target": "c6",
+            "type": "incorporates",
+            "strength": 0.8
+        },
+        {
+            "source": "c0",
+            "target": "c7",
+            "type": "requires",
+            "strength": 0.85
+        },
+        {
+            "source": "c0",
+            "target": "c8",
+            "type": "demonstrates",
+            "strength": 0.95
+        },
+        {
+            "source": "c0",
+            "target": "c9",
+            "type": "implements",
+            "strength": 0.75
+        },
+        {
+            "source": "c4",
+            "target": "c8",
+            "type": "underlies",
+            "strength": 0.9
+        },
+        {
+            "source": "c5",
+            "target": "c8",
+            "type": "describes",
+            "strength": 0.85
+        },
+        {
+            "source": "c6",
+            "target": "c7",
+            "type": "aids",
+            "strength": 0.7
+        },
+        {
+            "source": "c7",
+            "target": "c9",
+            "type": "enables",
+            "strength": 0.8
+        },
+        {
+            "source": "c3",
+            "target": "c9",
+            "type": "models",
+            "strength": 0.85
+        }
+    ]
+}
